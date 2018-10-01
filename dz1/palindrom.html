@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var str=prompt("Введите слово:","");
+		function isPalindrome(str) {
+   			var strLen = str.length, strReverse = str.split('').reverse().join(''); 
+        	//Разбиваем строку посимвольно  и превращаем ее в массив с помощью split(''), потом применяем к нему метод reverse() и собираем все символы в строку с помощью join('')
+    		if (strReverse == str) {
+     		return 'yes';
+    		} 
+    		else {
+     	 	return 'no';
+   			}
+   		}
+   		alert (isPalindrome(str))
+   	</script>
+</body>
+</html>
