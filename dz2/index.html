@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <div id="title">Пользователи:</div>
+
+  <ul>
+    <li class="one">Маша</li>
+    <li class="two">Вовочка</li>
+  </ul>
+
+
+
+  <!-- комментарий -->
+
+  <script>
+    var h=document.getElementsByTagName("head"),
+    u=document.getElementsByTagName("ul"),
+    l=document.getElementsByClassName("two"),
+    t=document.getElementById("title")
+    t.style.color="brown"
+    t.style.padding="15px" 
+
+    var ul = document.createElement("ul")
+    ul.id = "myList"
+    var li1 = document.createElement("li"), li2 = document.createElement("li"), li3 = document.createElement("li"), li4 = document.createElement("li"), li5 = document.createElement("li")
+    ul.appendChild(li1)
+    ul.appendChild(li2)
+    ul.appendChild(li3)
+    ul.appendChild(li4)
+    ul.appendChild(li5)
+    li1.id = "first"
+    var text1 = document.createTextNode ("Item #1"), text2 = document.createTextNode ("Item #2"),text3 = document.createTextNode ("Item #3"),text4 = document.createTextNode ("Item #4"),text5 = document.createTextNode ("Item")
+    li1.appendChild(text1)
+    li2.appendChild(text2)
+    li3.appendChild(text3)
+    li4.appendChild(text4)
+    li5.appendChild(text5)
+    var body = document.getElementsByTagName ("body")
+    li2.classList.add("class-two")
+    li3.style.color="red"
+    li4.style.display="none"
+    //text55.style.font-weight="bold"
+    //body.inerrHTML = ul
+    var mL = document.getElementById("myList")
+    mL.appendChild(li1);
+    mL.appendChild(li2);
+    mL.appendChild(li3);
+    mL.appendChild(li4);
+    mL.appendChild(li5);
+  </script>
+
+</body>
+
+</html>
